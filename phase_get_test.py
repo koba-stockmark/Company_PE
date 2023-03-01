@@ -4,11 +4,11 @@ from phase_extractor import PhaseExtractor
 
 model = PhaseExtractor() # KeywordExtractorのクラスのインスタンス化
 
-articles = json.load(open('nikkei.json'))
-articles2 = json.load(open('nikkei_5000.json'))
-solution = open('solution_sentence2.txt')
-out_file = open('phase_result.tsv', 'w')
-out_file2 = open('government_result.tsv', 'w')
+articles = json.load(open('../PredicateStructuring/data/nikkei.json'))
+articles2 = json.load(open('../PredicateStructuring/data/nikkei_5000.json'))
+solution = open('../PredicateStructuring/data/solution_sentence2.txt')
+out_file = open('data/phase_result.tsv', 'w')
+out_file2 = open('data/government_result.tsv', 'w')
 
 #"""
 for doc in solution:
